@@ -150,12 +150,12 @@ const jsonFormat: Format = {
   extension: "json"
 };
 
-const yamlFormat: Format = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  formatter: (obj: Record<string, any>) =>
-    YAML.safeDump(obj, { skipInvalid: true /* for undefined */ }),
-  extension: "yml"
-};
+//const yamlFormat: Format = {
+//  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+//  formatter: (obj: Record<string, any>) =>
+//    YAML.safeDump(obj, { skipInvalid: true /* for undefined */ }),
+//  extension: "yml"
+//};
 
 const generators: Generators = {
   raw: {
@@ -171,21 +171,21 @@ const generators: Generators = {
     transformer: generateJsonSchema,
     formats: {
       json: jsonFormat,
-      yaml: yamlFormat
+//      yaml: yamlFormat
     }
   },
   openapi2: {
     transformer: generateOpenAPI2,
     formats: {
       json: jsonFormat,
-      yaml: yamlFormat
+//      yaml: yamlFormat
     }
   },
   openapi3: {
     transformer: generateOpenAPI3,
     formats: {
       json: jsonFormat,
-      yaml: yamlFormat
+//      yaml: yamlFormat
     }
   }
 };
