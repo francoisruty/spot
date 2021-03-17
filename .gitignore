@@ -3,8 +3,6 @@
 *-error.log
 /.nyc_output
 /.vscode
-/build
-/dist
 /package-lock.json
 /tmp
 node_modules
