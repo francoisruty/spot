@@ -28,6 +28,7 @@ function createProject(): Project {
   const compilerOptions: CompilerOptions = {
     target: ts.ScriptTarget.ESNext,
     module: ts.ModuleKind.CommonJS,
+    esModuleInterop: true,
     strict: true,
     noImplicitAny: true,
     strictNullChecks: true,
